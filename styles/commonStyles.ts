@@ -31,12 +31,13 @@ const styles = StyleSheet.create({
     marginTop: 12,
   },
   imageText: {
-    paddingLeft: 16,
-    paddingRight: 16,
     paddingTop: 9,
+    color: "#FFFFFF",
   },
   justifiedText: {
     textAlign: "justify",
+    paddingRight: 16,
+    paddingLeft: 16,
   },
   textShadow: {
     textShadowColor: "#2A2F3B",
@@ -54,6 +55,55 @@ const styles = StyleSheet.create({
     height: 160,
     borderRadius: 8,
     marginRight: 12,
+  },
+
+  // IMAGE CONTAINER STYLES
+  imageContainers: {
+    overflow: "hidden",
+    backgroundColor: "#e0e0e0",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  imageCont: {
+    width: "100%",
+    height: "100%",
+  },
+  wrapper: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    padding: 10,
+  },
+
+  // COMPONENT BACKGROUND
+    background: {
+    flex: 1, // fills the screen
+    resizeMode: "cover", // or "contain"
+  },
+  content: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  text: {
+    color: "#fff",
+    fontSize: 24,
+    fontWeight: "bold",
+  },
+
+  //COMPONENT TITLE
+  componentTitle: {
+    fontSize: 24,
+    fontWeight: "bold",
+  },
+
+  // SEARCH TITLE BAR
+    input: {
+    borderWidth: 1,
+    borderColor: "#ccc",
+    padding: 8,
+    margin: 10,
+    borderRadius: 5,
   },
 });
 

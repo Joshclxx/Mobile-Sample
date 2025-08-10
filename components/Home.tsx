@@ -1,8 +1,19 @@
-import { Image, ScrollView, Text, View } from "react-native";
-import commonStyles from "../styles/commonStyles";
+import { useState } from "react";
+import { Image, ScrollView, Text, TextInput, View } from "react-native";
+import { default as commonStyles } from "../styles/commonStyles";
+import CupSeries from "./CupSeries";
+
 
 export default function Index() {
+
+  const [searchTitle, setSearchTitle] = useState("")
+
   return (
+    // <ImageBackground
+    //   source={require("../assets/images/bg.jpeg")}
+    //   style={[commonStyles.background, commonStyles.content]}
+    //   imageStyle={{ opacity: 100 }}
+    // >
     <ScrollView>
       <View style={commonStyles.container}>
         <Text style={[commonStyles.title, commonStyles.justifiedText]}>
@@ -10,6 +21,14 @@ export default function Index() {
         </Text>
       </View>
 
+      <TextInput
+        value={searchTitle} 
+        onChangeText={setSearchTitle}
+        placeholder="Find your mood coffee..."
+        style={commonStyles.input}
+      >
+      </TextInput>
+      
       <View style={commonStyles.imageContainer}>
         <Image
           source={require("../assets/images/coffee-shop.png")}
@@ -23,56 +42,8 @@ export default function Index() {
           </Text>
         </View>
       </View>
-
-      <ScrollView
-        horizontal
-        style={{ paddingTop: 20 }}
-        contentContainerStyle={commonStyles.between}
-        showsHorizontalScrollIndicator={false}
-      >
-        <View>
-          <Image
-            source={require("../assets/images/coffee-shop.png")}
-            style={commonStyles.containerBoxes}
-          />
-          <Text style={commonStyles.description}>Helloo</Text>
-        </View>
-        <View>
-          <Image
-            source={require("../assets/images/coffee-shop.png")}
-            style={commonStyles.containerBoxes}
-          />
-          <Text style={commonStyles.description}>Helloo</Text>
-        </View>
-        <View>
-          <Image
-            source={require("../assets/images/coffee-shop.png")}
-            style={commonStyles.containerBoxes}
-          />
-          <Text style={commonStyles.description}>Helloo</Text>
-        </View>
-        <View>
-          <Image
-            source={require("../assets/images/coffee-shop.png")}
-            style={commonStyles.containerBoxes}
-          />
-          <Text style={commonStyles.description}>Helloo</Text>
-        </View>
-        <View>
-          <Image
-            source={require("../assets/images/coffee-shop.png")}
-            style={commonStyles.containerBoxes}
-          />
-          <Text style={commonStyles.description}>Helloo</Text>
-        </View>
-        <View>
-          <Image
-            source={require("../assets/images/coffee-shop.png")}
-            style={commonStyles.containerBoxes}
-          />
-          <Text style={commonStyles.description}>Helloo</Text>
-        </View>
-      </ScrollView>
+      <CupSeries searchTitle={searchTitle} />
     </ScrollView>
+    // </ImageBackground>
   );
 }

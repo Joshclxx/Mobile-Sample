@@ -1,90 +1,24 @@
-// import { Image, ScrollView, Text, View } from "react-native";
-// import commonStyles from "../styles/commonStyles";
-
-// export default function Index() {
-//   return (
-//     <ScrollView>
-//       <View style={commonStyles.container}>
-//         <Text style={[commonStyles.title, commonStyles.justifiedText]}>
-//           Good Afternoon Joshclxx!
-//         </Text>
-//       </View>
-
-//       <View style={commonStyles.imageContainer}>
-//         <Image
-//           source={require("../assets/images/coffee-shop.png")}
-//           style={commonStyles.image}
-//         />
-//         <View style={commonStyles.imageText}>
-//           <Text style={[commonStyles.justifiedText, commonStyles.description]}>
-//             Cozy and inviting coffee shop serving freshly brewed coffee,
-//             handcrafted beverages, and light bites in a relaxed atmosphere —
-//             perfect for work, catch-ups, or quiet moments.
-//           </Text>
-//         </View>
-//       </View>
-
-//       <ScrollView
-//         horizontal
-//         style={{ paddingTop: 20 }}
-//         contentContainerStyle={commonStyles.between}
-//         showsHorizontalScrollIndicator={false}
-//       >
-//         <View>
-//           <Image
-//             source={require("../assets/images/coffee-shop.png")}
-//             style={commonStyles.containerBoxes}
-//           />
-//           <Text style={commonStyles.description}>Helloo</Text>
-//         </View>
-//         <View>
-//           <Image
-//             source={require("../assets/images/coffee-shop.png")}
-//             style={commonStyles.containerBoxes}
-//           />
-//           <Text style={commonStyles.description}>Helloo</Text>
-//         </View>
-//         <View>
-//           <Image
-//             source={require("../assets/images/coffee-shop.png")}
-//             style={commonStyles.containerBoxes}
-//           />
-//           <Text style={commonStyles.description}>Helloo</Text>
-//         </View>
-//         <View>
-//           <Image
-//             source={require("../assets/images/coffee-shop.png")}
-//             style={commonStyles.containerBoxes}
-//           />
-//           <Text style={commonStyles.description}>Helloo</Text>
-//         </View>
-//         <View>
-//           <Image
-//             source={require("../assets/images/coffee-shop.png")}
-//             style={commonStyles.containerBoxes}
-//           />
-//           <Text style={commonStyles.description}>Helloo</Text>
-//         </View>
-//         <View>
-//           <Image
-//             source={require("../assets/images/coffee-shop.png")}
-//             style={commonStyles.containerBoxes}
-//           />
-//           <Text style={commonStyles.description}>Helloo</Text>
-//         </View>
-//       </ScrollView>
-//     </ScrollView>
-//   );
-// }
-
 import Home from "@/components/Home";
+// import TextPractice from "@/components/TextPractice";
 import React from "react";
-import { View } from "react-native";
+import { ScrollView, View } from "react-native";
 
 export default function Index() {
   return (
+    <ScrollView>
     <View>
       <Home />
+      {/* <CupSeries searchTitle={""} /> */}
+      {/* <TextPractice /> */}
     </View>
+    </ScrollView>
   );
 }
+
+
+// Next To Create (GOAL TO ACCOMPLISH ON AUGUST 15, 2025)
+// 1. Tabs (Navigation Bar)
+// 2. See More To Avoid Infinite Scrolling In Home Page
+// 3. Search Bar
+// 4. Profile Account
+// 5. Login Form
