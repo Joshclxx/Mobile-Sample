@@ -19,6 +19,6 @@ export default function Index() {
 // Next To Create (GOAL TO ACCOMPLISH ON AUGUST 15, 2025)
 // 1. Tabs (Navigation Bar)
 // 2. See More To Avoid Infinite Scrolling In Home Page
-// 3. Search Bar
+// 3. Search Bar ==>> DONE
 // 4. Profile Account
 // 5. Login Form
